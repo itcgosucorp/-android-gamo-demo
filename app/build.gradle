@@ -1,0 +1,63 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+android {
+    compileSdkVersion 31
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "kh.gamo.cb9yin"
+        minSdkVersion 19
+        targetSdkVersion 31
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    // GRPC Deps
+    implementation 'io.grpc:grpc-okhttp:1.35.0'
+    implementation 'io.grpc:grpc-protobuf-lite:1.35.0'
+    implementation 'io.grpc:grpc-stub:1.35.0'
+    //implementation 'org.apache.tomcat:annotations-api:6.0.53'
+    compileOnly 'org.apache.tomcat:annotations-api:6.0.53'
+    //add library
+    implementation files('libs/gamesdk.aar')
+    //for appsflyer
+    implementation 'com.appsflyer:af-android-sdk:6.3.2'
+    implementation 'com.android.installreferrer:installreferrer:2.2'
+    //for showLogin facebook sdk
+    implementation 'com.facebook.android:facebook-android-sdk:latest.release'
+    //for in app billing
+    implementation 'com.android.billingclient:billing:5.0.0'
+    implementation 'com.google.guava:guava:31.1-android'
+    //for sigin GG SDK
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'
+    //for firebase
+    implementation platform('com.google.firebase:firebase-bom:31.1.0')
+    implementation 'com.google.firebase:firebase-analytics:21.2.0'
+    implementation 'com.google.firebase:firebase-messaging:23.1.0'
+
+}

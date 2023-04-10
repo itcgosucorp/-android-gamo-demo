@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "762413568038",
+    "project_id": "yin-42f91",
+    "storage_bucket": "yin-42f91.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:762413568038:android:54fd1dbcf86014b39b16e7",
+        "android_client_info": {
+          "package_name": "kh.gamo.cb9yin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "762413568038-9uaf4c59nkvn1qvlc6dgghrhob86ei82.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCS_dj6ihGA1DdtYT-bEmrgRd_Vh976Ihc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "762413568038-9uaf4c59nkvn1qvlc6dgghrhob86ei82.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "762413568038-qeifnfg50472itgim7kt4hp5orbi1s9u.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "kh.gamo.9yin",
+                "app_store_id": "1628270501"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
